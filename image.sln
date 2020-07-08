@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussianRoulette", "image\RussianRoulette.csproj", "{A7411E78-C33F-4E9C-9A64-F657E1229E06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit Test", "Unit Test\Unit Test.csproj", "{90F44E16-AEB5-44B5-B189-6C2388E264E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{7E30D9AE-8369-48F4-992E-8335F5032F4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A7411E78-C33F-4E9C-9A64-F657E1229E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7411E78-C33F-4E9C-9A64-F657E1229E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7411E78-C33F-4E9C-9A64-F657E1229E06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90F44E16-AEB5-44B5-B189-6C2388E264E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90F44E16-AEB5-44B5-B189-6C2388E264E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90F44E16-AEB5-44B5-B189-6C2388E264E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90F44E16-AEB5-44B5-B189-6C2388E264E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E30D9AE-8369-48F4-992E-8335F5032F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E30D9AE-8369-48F4-992E-8335F5032F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E30D9AE-8369-48F4-992E-8335F5032F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E30D9AE-8369-48F4-992E-8335F5032F4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

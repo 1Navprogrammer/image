@@ -41,7 +41,13 @@ namespace image
             textBox1.Text = Logic.Score + "";
             SoundPlayer player = new SoundPlayer(Resource1.GunSound);
             player.Play();
-           
+            if (Logic.ShootaheadChances == 0)
+            {
+                Gunsound.Enabled = false;
+                
+            }
+
+
         }
         //ShootAway button
         private void Gunsound2_Click(object sender, EventArgs e)
@@ -71,7 +77,6 @@ namespace image
         private void Spin_Click(object sender, EventArgs e)
         {
             Logic.Spin();
-            Logic.Load();
             Load.Enabled = false;
             Spin.Enabled = false;
             Gunsound.Enabled = true;

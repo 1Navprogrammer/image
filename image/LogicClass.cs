@@ -14,7 +14,7 @@ namespace image
         public int Bullet;
         public int Score = 0;
         public int ShootingAwayChances = 2;
-
+        public int ShootaheadChances = 5;
 
         public void Load()
         {
@@ -32,12 +32,12 @@ namespace image
         {
             if (Bullet == 5)
             {
-                MessageBox.Show("You win the game");
+                MessageBox.Show("You lost");
                 Score = Score - 5;
             }
             else
             {
-                MessageBox.Show("Continuous start playing");
+                MessageBox.Show("continue playing");
                 Bullet++;
             }
         }
@@ -47,7 +47,7 @@ namespace image
             ShootingAwayChances--;
             if (ShootingAwayChances == 0)
             {
-                MessageBox.Show("You lost the Chance");
+                MessageBox.Show("You lost the Chances and you lose");
             }
             else
             {
@@ -60,11 +60,12 @@ namespace image
                 }
                 else
                 {
-                    MessageBox.Show("Continuous start playing");
+                    MessageBox.Show("continue playing");
                     Bullet++;
                 }
             }
         }
+         
     }
 }
     
