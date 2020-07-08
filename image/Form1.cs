@@ -25,6 +25,7 @@ namespace image
         {
             InitializeComponent();
         }
+        //Load button
         private void Form1_Load(object sender, EventArgs e)
         {
             Load.Enabled = true;
@@ -32,7 +33,7 @@ namespace image
             Gunsound.Enabled = false;
             Gunsound2.Enabled = false;
         }
-
+        //ShootAHead button
         private void button1_Click(object sender, EventArgs e)
         {
             Logic.Shootahead();
@@ -42,7 +43,7 @@ namespace image
             player.Play();
 
         }
-
+        //ShootAway button
         private void Gunsound2_Click(object sender, EventArgs e)
         {
            if (Logic.ShootingAwayChances == 0)
@@ -54,19 +55,15 @@ namespace image
             SoundPlayer player = new SoundPlayer(Resource1.Gunsound2);
             player.Play();
         }
-
+        //Load button
         private void Load_Click(object sender, EventArgs e)
         {
             Logic.Load();
-            Load.Enabled = false; 
-            Spin.Enabled = true;
-           Gunsound.Enabled = false;
-            Gunsound2.Enabled = false;
-            PlayAgain.Enabled = false;
+           
             SoundPlayer player = new SoundPlayer(Resource1.Load);
             player.Play();
         }
-
+        //Spin button
         private void Spin_Click(object sender, EventArgs e)
         {
             Logic.Spin();
@@ -79,12 +76,12 @@ namespace image
             SoundPlayer player = new SoundPlayer(Resource1.Spin);
             player.Play();
         }
-
+        //Lebel
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
+        //PlayAgain button
         private void PlayAgain_Click(object sender, EventArgs e)
         {
             Logic.Load();
@@ -92,6 +89,21 @@ namespace image
             Spin.Enabled = false;
             Gunsound.Enabled = false;
             Gunsound2.Enabled = false;
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

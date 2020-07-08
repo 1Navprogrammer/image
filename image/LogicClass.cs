@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+ 
 namespace image
 {
     class LogicClass
@@ -20,6 +20,7 @@ namespace image
         {
             Bullet = 0;
         }
+        //Spin roller
         public void Spin()
         {
             Random rand = new Random();
@@ -31,7 +32,7 @@ namespace image
         {
             if (Bullet == 5)
             {
-                MessageBox.Show("You lost the game");
+                MessageBox.Show("You win the game");
                 Score = Score - 5;
             }
             else
@@ -40,7 +41,7 @@ namespace image
                 Bullet++;
             }
         }
-
+        // this is ShootAway
         public void Shootaway()
         {
             ShootingAwayChances--;
